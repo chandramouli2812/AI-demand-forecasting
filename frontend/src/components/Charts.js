@@ -6,6 +6,8 @@ import {
   Tooltip,
   CartesianGrid,
   ResponsiveContainer,
+  Scatter,
+  Legend,
 } from "recharts";
 
 function Charts({ data }) {
@@ -21,13 +23,10 @@ function Charts({ data }) {
           <XAxis dataKey="day" />
           <YAxis />
           <Tooltip />
-          <Line
-            type="monotone"
-            dataKey="forecast"
-            stroke="#82ca9d"
-            name="Forecast"
-            dot={false}
-          />
+          <Legend />
+          <Line type="monotone" dataKey="actual" stroke="#8884d8" name="Actual" dot={false} />
+          <Line type="monotone" dataKey="forecast" stroke="#82ca9d" name="Forecast" dot={false} />
+          <Scatter data={data.filter((item) => item.anomaly != null)} dataKey="anomaly" fill="#ff4d4f" name="Anomaly" />
         </LineChart>
       </ResponsiveContainer>
     </div>

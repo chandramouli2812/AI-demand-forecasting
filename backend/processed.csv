@@ -1,255 +1,536 @@
-ds,y
-2021-01-03,2
-2021-01-04,8
-2021-01-05,3
-2021-01-06,30
-2021-01-07,10
-2021-01-09,5
-2021-01-10,2
-2021-01-11,2
-2021-01-13,48
-2021-01-14,4
-2021-01-15,5
-2021-01-16,14
-2021-01-18,4
-2021-01-19,24
-2021-01-20,58
-2021-01-21,25
-2021-01-23,9
-2021-01-26,38
-2021-01-27,8
-2021-01-28,1
-2021-01-30,4
-2021-01-31,2
-2021-02-01,6
-2021-02-02,12
-2021-02-03,5
-2021-02-04,9
-2021-02-06,12
-2021-02-07,11
-2021-02-08,2
-2021-02-11,25
-2021-02-12,2
-2021-02-14,10
-2021-02-15,5
-2021-02-16,5
-2021-02-17,14
-2021-02-18,7
-2021-02-20,9
-2021-02-21,5
-2021-02-22,3
-2021-02-23,6
-2021-02-24,7
-2021-02-27,4
-2021-03-01,40
-2021-03-02,11
-2021-03-03,35
-2021-03-04,8
-2021-03-05,16
-2021-03-07,27
-2021-03-10,9
-2021-03-11,39
-2021-03-13,12
-2021-03-14,38
-2021-03-15,14
-2021-03-16,2
-2021-03-17,82
-2021-03-18,48
-2021-03-19,23
-2021-03-21,39
-2021-03-22,17
-2021-03-23,11
-2021-03-24,7
-2021-03-25,21
-2021-03-26,16
-2021-03-28,11
-2021-03-29,3
-2021-03-30,39
-2021-03-31,29
-2021-04-01,12
-2021-04-02,29
-2021-04-03,7
-2021-04-04,25
-2021-04-05,54
-2021-04-06,38
-2021-04-07,22
-2021-04-08,27
-2021-04-11,37
-2021-04-12,35
-2021-04-13,42
-2021-04-15,6
-2021-04-16,6
-2021-04-18,26
-2021-04-19,17
-2021-04-20,16
-2021-04-21,11
-2021-04-22,11
-2021-04-23,20
-2021-04-25,21
-2021-04-26,16
-2021-04-28,29
-2021-04-29,16
-2021-04-30,13
-2021-05-02,5
-2021-05-03,13
-2021-05-04,25
-2021-05-05,15
-2021-05-06,16
-2021-05-07,24
-2021-05-08,5
-2021-05-09,25
-2021-05-10,34
-2021-05-11,32
-2021-05-12,10
-2021-05-13,23
-2021-05-14,2
-2021-05-16,8
-2021-05-17,3
-2021-05-18,10
-2021-05-19,14
-2021-05-20,42
-2021-05-21,62
-2021-05-22,3
-2021-05-23,23
-2021-05-24,3
-2021-05-25,6
-2021-05-26,21
-2021-05-27,33
-2021-05-28,14
-2021-05-30,27
-2021-05-31,6
-2021-06-01,55
-2021-06-02,16
-2021-06-03,22
-2021-06-04,12
-2021-06-06,34
-2021-06-07,6
-2021-06-08,14
-2021-06-09,66
-2021-06-10,5
-2021-06-13,3
-2021-06-14,3
-2021-06-15,11
-2021-06-16,20
-2021-06-17,16
-2021-06-18,8
-2021-06-20,32
-2021-06-21,56
-2021-06-22,26
-2021-06-23,13
-2021-06-24,2
-2021-06-25,22
-2021-06-27,10
-2021-06-28,24
-2021-06-29,10
-2021-06-30,38
-2021-07-01,13
-2021-07-02,3
-2021-07-04,14
-2021-07-05,41
-2021-07-06,3
-2021-07-07,4
-2021-07-08,10
-2021-07-09,30
-2021-07-11,43
-2021-07-12,58
-2021-07-13,3
-2021-07-14,27
-2021-07-15,6
-2021-07-18,6
-2021-07-19,8
-2021-07-20,44
-2021-07-21,24
-2021-07-22,31
-2021-07-23,43
-2021-07-25,22
-2021-07-26,76
-2021-07-27,15
-2021-07-28,18
-2021-07-30,8
-2021-08-01,15
-2021-08-02,9
-2021-08-03,20
-2021-08-04,51
-2021-08-05,37
-2021-08-06,5
-2021-08-08,66
-2021-08-09,35
-2021-08-11,5
-2021-08-12,61
-2021-08-15,38
-2021-08-16,6
-2021-08-17,23
-2021-08-19,33
-2021-08-20,18
-2021-08-22,6
-2021-08-23,44
-2021-08-24,10
-2021-08-25,67
-2021-08-26,22
-2021-08-27,23
-2021-08-29,13
-2021-08-30,8
-2021-08-31,9
-2021-09-01,17
-2021-09-02,28
-2021-09-03,10
-2021-09-05,4
-2021-09-06,14
-2021-09-07,78
-2021-09-08,112
-2021-09-09,56
-2021-09-10,25
-2021-09-11,3
-2021-09-12,39
-2021-09-13,53
-2021-09-14,77
-2021-09-15,9
-2021-09-16,1
-2021-09-17,53
-2021-09-19,38
-2021-09-20,69
-2021-09-21,55
-2021-09-22,24
-2021-09-23,48
-2021-09-24,9
-2021-09-25,16
-2021-09-26,49
-2021-09-27,10
-2021-09-28,19
-2021-09-29,73
-2021-09-30,26
-2021-10-01,1
-2021-10-02,18
-2021-10-03,37
-2021-10-04,16
-2021-10-05,29
-2021-10-06,12
-2021-10-07,15
-2021-10-08,7
-2021-10-09,6
-2021-10-10,42
-2021-10-11,33
-2021-10-12,8
-2021-10-13,35
-2021-10-14,57
-2021-10-15,5
-2021-10-16,6
-2021-10-17,10
-2021-10-18,39
-2021-10-19,37
-2021-10-20,20
-2021-10-21,20
-2021-10-22,8
-2021-10-24,8
-2021-10-25,10
-2021-10-26,9
-2021-10-27,5
-2021-10-28,19
-2021-10-29,10
-2021-10-31,83
-2021-11-01,81
-2021-11-02,49
-2021-11-03,52
-2021-11-04,50
-2021-11-05,26
+ds,product,y
+2021-01-06,Furniture,9
+2021-01-07,Furniture,3
+2021-01-10,Furniture,1
+2021-01-11,Furniture,2
+2021-01-13,Furniture,9
+2021-01-14,Furniture,4
+2021-01-16,Furniture,6
+2021-01-19,Furniture,5
+2021-01-20,Furniture,15
+2021-01-21,Furniture,14
+2021-01-26,Furniture,8
+2021-01-27,Furniture,3
+2021-01-31,Furniture,2
+2021-02-08,Furniture,2
+2021-02-11,Furniture,10
+2021-02-12,Furniture,2
+2021-02-18,Furniture,5
+2021-02-20,Furniture,4
+2021-03-01,Furniture,23
+2021-03-03,Furniture,8
+2021-03-07,Furniture,9
+2021-03-11,Furniture,5
+2021-03-13,Furniture,12
+2021-03-14,Furniture,4
+2021-03-15,Furniture,3
+2021-03-17,Furniture,14
+2021-03-18,Furniture,17
+2021-03-19,Furniture,6
+2021-03-21,Furniture,6
+2021-03-22,Furniture,3
+2021-03-24,Furniture,2
+2021-03-25,Furniture,7
+2021-03-28,Furniture,5
+2021-03-29,Furniture,3
+2021-03-30,Furniture,9
+2021-03-31,Furniture,7
+2021-04-02,Furniture,2
+2021-04-04,Furniture,1
+2021-04-06,Furniture,15
+2021-04-07,Furniture,2
+2021-04-08,Furniture,10
+2021-04-12,Furniture,3
+2021-04-15,Furniture,4
+2021-04-18,Furniture,3
+2021-04-19,Furniture,3
+2021-04-20,Furniture,11
+2021-04-23,Furniture,8
+2021-04-25,Furniture,10
+2021-04-26,Furniture,3
+2021-04-29,Furniture,6
+2021-05-04,Furniture,9
+2021-05-05,Furniture,3
+2021-05-07,Furniture,12
+2021-05-10,Furniture,8
+2021-05-11,Furniture,12
+2021-05-12,Furniture,10
+2021-05-13,Furniture,6
+2021-05-14,Furniture,2
+2021-05-16,Furniture,5
+2021-05-18,Furniture,3
+2021-05-20,Furniture,19
+2021-05-21,Furniture,2
+2021-05-25,Furniture,2
+2021-05-26,Furniture,6
+2021-05-27,Furniture,10
+2021-05-30,Furniture,3
+2021-06-01,Furniture,13
+2021-06-02,Furniture,6
+2021-06-03,Furniture,13
+2021-06-04,Furniture,6
+2021-06-06,Furniture,3
+2021-06-07,Furniture,3
+2021-06-08,Furniture,6
+2021-06-09,Furniture,25
+2021-06-14,Furniture,3
+2021-06-15,Furniture,6
+2021-06-16,Furniture,8
+2021-06-17,Furniture,3
+2021-06-20,Furniture,4
+2021-06-21,Furniture,2
+2021-06-22,Furniture,8
+2021-06-24,Furniture,2
+2021-06-25,Furniture,5
+2021-06-27,Furniture,1
+2021-06-28,Furniture,5
+2021-07-05,Furniture,5
+2021-07-06,Furniture,2
+2021-07-07,Furniture,4
+2021-07-08,Furniture,4
+2021-07-09,Furniture,1
+2021-07-11,Furniture,12
+2021-07-12,Furniture,10
+2021-07-13,Furniture,3
+2021-07-14,Furniture,2
+2021-07-18,Furniture,4
+2021-07-19,Furniture,1
+2021-07-20,Furniture,10
+2021-07-21,Furniture,8
+2021-07-22,Furniture,6
+2021-07-25,Furniture,8
+2021-07-26,Furniture,20
+2021-07-28,Furniture,6
+2021-07-30,Furniture,8
+2021-08-01,Furniture,4
+2021-08-03,Furniture,2
+2021-08-05,Furniture,14
+2021-08-08,Furniture,22
+2021-08-11,Furniture,1
+2021-08-12,Furniture,3
+2021-08-15,Furniture,4
+2021-08-16,Furniture,6
+2021-08-19,Furniture,16
+2021-08-20,Furniture,15
+2021-08-23,Furniture,3
+2021-08-24,Furniture,2
+2021-08-25,Furniture,1
+2021-08-26,Furniture,4
+2021-08-27,Furniture,7
+2021-08-29,Furniture,3
+2021-09-02,Furniture,1
+2021-09-05,Furniture,2
+2021-09-06,Furniture,6
+2021-09-07,Furniture,19
+2021-09-08,Furniture,21
+2021-09-09,Furniture,15
+2021-09-10,Furniture,10
+2021-09-11,Furniture,3
+2021-09-12,Furniture,8
+2021-09-13,Furniture,9
+2021-09-14,Furniture,22
+2021-09-15,Furniture,6
+2021-09-17,Furniture,2
+2021-09-19,Furniture,8
+2021-09-20,Furniture,21
+2021-09-21,Furniture,2
+2021-09-22,Furniture,7
+2021-09-23,Furniture,3
+2021-09-25,Furniture,2
+2021-09-26,Furniture,6
+2021-09-27,Furniture,8
+2021-09-28,Furniture,4
+2021-09-29,Furniture,20
+2021-09-30,Furniture,3
+2021-10-03,Furniture,10
+2021-10-04,Furniture,5
+2021-10-05,Furniture,12
+2021-10-07,Furniture,5
+2021-10-10,Furniture,10
+2021-10-11,Furniture,17
+2021-10-13,Furniture,7
+2021-10-14,Furniture,9
+2021-10-15,Furniture,3
+2021-10-17,Furniture,2
+2021-10-18,Furniture,12
+2021-10-19,Furniture,3
+2021-10-20,Furniture,3
+2021-10-21,Furniture,7
+2021-10-22,Furniture,8
+2021-10-26,Furniture,4
+2021-10-28,Furniture,6
+2021-10-31,Furniture,22
+2021-11-01,Furniture,8
+2021-11-02,Furniture,6
+2021-11-03,Furniture,9
+2021-11-04,Furniture,7
+2021-11-05,Furniture,13
+2021-01-03,Office Supplies,2
+2021-01-04,Office Supplies,8
+2021-01-05,Office Supplies,3
+2021-01-06,Office Supplies,15
+2021-01-07,Office Supplies,7
+2021-01-09,Office Supplies,2
+2021-01-10,Office Supplies,1
+2021-01-13,Office Supplies,33
+2021-01-16,Office Supplies,5
+2021-01-18,Office Supplies,4
+2021-01-19,Office Supplies,19
+2021-01-20,Office Supplies,36
+2021-01-21,Office Supplies,1
+2021-01-23,Office Supplies,9
+2021-01-26,Office Supplies,15
+2021-01-27,Office Supplies,5
+2021-01-28,Office Supplies,1
+2021-01-30,Office Supplies,4
+2021-02-02,Office Supplies,7
+2021-02-03,Office Supplies,5
+2021-02-04,Office Supplies,9
+2021-02-06,Office Supplies,6
+2021-02-07,Office Supplies,4
+2021-02-11,Office Supplies,12
+2021-02-14,Office Supplies,7
+2021-02-15,Office Supplies,5
+2021-02-16,Office Supplies,5
+2021-02-17,Office Supplies,14
+2021-02-18,Office Supplies,2
+2021-02-20,Office Supplies,2
+2021-02-21,Office Supplies,5
+2021-02-22,Office Supplies,3
+2021-02-23,Office Supplies,6
+2021-02-24,Office Supplies,7
+2021-02-27,Office Supplies,4
+2021-03-01,Office Supplies,14
+2021-03-02,Office Supplies,8
+2021-03-03,Office Supplies,26
+2021-03-04,Office Supplies,8
+2021-03-05,Office Supplies,13
+2021-03-07,Office Supplies,18
+2021-03-10,Office Supplies,9
+2021-03-11,Office Supplies,29
+2021-03-14,Office Supplies,20
+2021-03-15,Office Supplies,11
+2021-03-17,Office Supplies,68
+2021-03-18,Office Supplies,17
+2021-03-19,Office Supplies,12
+2021-03-21,Office Supplies,26
+2021-03-22,Office Supplies,14
+2021-03-23,Office Supplies,5
+2021-03-24,Office Supplies,5
+2021-03-25,Office Supplies,10
+2021-03-26,Office Supplies,11
+2021-03-28,Office Supplies,3
+2021-03-30,Office Supplies,23
+2021-03-31,Office Supplies,20
+2021-04-01,Office Supplies,12
+2021-04-02,Office Supplies,20
+2021-04-03,Office Supplies,2
+2021-04-04,Office Supplies,22
+2021-04-05,Office Supplies,53
+2021-04-06,Office Supplies,16
+2021-04-07,Office Supplies,12
+2021-04-08,Office Supplies,13
+2021-04-11,Office Supplies,13
+2021-04-12,Office Supplies,14
+2021-04-13,Office Supplies,30
+2021-04-15,Office Supplies,2
+2021-04-16,Office Supplies,6
+2021-04-18,Office Supplies,16
+2021-04-19,Office Supplies,14
+2021-04-20,Office Supplies,5
+2021-04-21,Office Supplies,11
+2021-04-22,Office Supplies,11
+2021-04-23,Office Supplies,12
+2021-04-25,Office Supplies,8
+2021-04-26,Office Supplies,13
+2021-04-28,Office Supplies,22
+2021-04-29,Office Supplies,8
+2021-04-30,Office Supplies,10
+2021-05-02,Office Supplies,3
+2021-05-03,Office Supplies,13
+2021-05-04,Office Supplies,16
+2021-05-05,Office Supplies,12
+2021-05-06,Office Supplies,16
+2021-05-07,Office Supplies,12
+2021-05-09,Office Supplies,18
+2021-05-10,Office Supplies,16
+2021-05-11,Office Supplies,15
+2021-05-13,Office Supplies,14
+2021-05-17,Office Supplies,3
+2021-05-18,Office Supplies,5
+2021-05-19,Office Supplies,14
+2021-05-20,Office Supplies,20
+2021-05-21,Office Supplies,57
+2021-05-23,Office Supplies,21
+2021-05-24,Office Supplies,3
+2021-05-25,Office Supplies,4
+2021-05-26,Office Supplies,11
+2021-05-27,Office Supplies,10
+2021-05-28,Office Supplies,4
+2021-05-30,Office Supplies,16
+2021-06-01,Office Supplies,35
+2021-06-02,Office Supplies,7
+2021-06-03,Office Supplies,9
+2021-06-04,Office Supplies,6
+2021-06-06,Office Supplies,31
+2021-06-07,Office Supplies,3
+2021-06-08,Office Supplies,8
+2021-06-09,Office Supplies,28
+2021-06-10,Office Supplies,5
+2021-06-13,Office Supplies,3
+2021-06-15,Office Supplies,5
+2021-06-16,Office Supplies,12
+2021-06-17,Office Supplies,10
+2021-06-18,Office Supplies,3
+2021-06-20,Office Supplies,24
+2021-06-21,Office Supplies,33
+2021-06-22,Office Supplies,9
+2021-06-23,Office Supplies,10
+2021-06-25,Office Supplies,12
+2021-06-27,Office Supplies,5
+2021-06-28,Office Supplies,19
+2021-06-29,Office Supplies,10
+2021-06-30,Office Supplies,38
+2021-07-01,Office Supplies,11
+2021-07-02,Office Supplies,1
+2021-07-04,Office Supplies,14
+2021-07-05,Office Supplies,33
+2021-07-08,Office Supplies,6
+2021-07-09,Office Supplies,29
+2021-07-11,Office Supplies,21
+2021-07-12,Office Supplies,36
+2021-07-14,Office Supplies,18
+2021-07-15,Office Supplies,3
+2021-07-18,Office Supplies,2
+2021-07-19,Office Supplies,5
+2021-07-20,Office Supplies,32
+2021-07-21,Office Supplies,14
+2021-07-22,Office Supplies,23
+2021-07-23,Office Supplies,11
+2021-07-25,Office Supplies,14
+2021-07-26,Office Supplies,35
+2021-07-27,Office Supplies,13
+2021-07-28,Office Supplies,12
+2021-08-01,Office Supplies,11
+2021-08-02,Office Supplies,7
+2021-08-03,Office Supplies,18
+2021-08-04,Office Supplies,37
+2021-08-05,Office Supplies,21
+2021-08-08,Office Supplies,30
+2021-08-09,Office Supplies,27
+2021-08-11,Office Supplies,4
+2021-08-12,Office Supplies,30
+2021-08-15,Office Supplies,34
+2021-08-17,Office Supplies,19
+2021-08-19,Office Supplies,17
+2021-08-20,Office Supplies,3
+2021-08-22,Office Supplies,6
+2021-08-23,Office Supplies,32
+2021-08-24,Office Supplies,8
+2021-08-25,Office Supplies,54
+2021-08-26,Office Supplies,7
+2021-08-27,Office Supplies,8
+2021-08-29,Office Supplies,10
+2021-08-30,Office Supplies,8
+2021-09-01,Office Supplies,14
+2021-09-02,Office Supplies,14
+2021-09-03,Office Supplies,10
+2021-09-05,Office Supplies,2
+2021-09-06,Office Supplies,8
+2021-09-07,Office Supplies,39
+2021-09-08,Office Supplies,68
+2021-09-09,Office Supplies,32
+2021-09-10,Office Supplies,15
+2021-09-12,Office Supplies,24
+2021-09-13,Office Supplies,31
+2021-09-14,Office Supplies,47
+2021-09-15,Office Supplies,3
+2021-09-16,Office Supplies,1
+2021-09-17,Office Supplies,34
+2021-09-19,Office Supplies,17
+2021-09-20,Office Supplies,30
+2021-09-21,Office Supplies,46
+2021-09-22,Office Supplies,17
+2021-09-23,Office Supplies,43
+2021-09-24,Office Supplies,4
+2021-09-25,Office Supplies,14
+2021-09-26,Office Supplies,30
+2021-09-27,Office Supplies,2
+2021-09-28,Office Supplies,15
+2021-09-29,Office Supplies,51
+2021-09-30,Office Supplies,23
+2021-10-01,Office Supplies,1
+2021-10-02,Office Supplies,12
+2021-10-03,Office Supplies,24
+2021-10-04,Office Supplies,11
+2021-10-05,Office Supplies,14
+2021-10-06,Office Supplies,9
+2021-10-07,Office Supplies,10
+2021-10-08,Office Supplies,4
+2021-10-09,Office Supplies,5
+2021-10-10,Office Supplies,17
+2021-10-11,Office Supplies,11
+2021-10-12,Office Supplies,8
+2021-10-13,Office Supplies,24
+2021-10-14,Office Supplies,40
+2021-10-15,Office Supplies,2
+2021-10-16,Office Supplies,3
+2021-10-17,Office Supplies,5
+2021-10-18,Office Supplies,22
+2021-10-19,Office Supplies,22
+2021-10-20,Office Supplies,13
+2021-10-21,Office Supplies,13
+2021-10-24,Office Supplies,8
+2021-10-25,Office Supplies,7
+2021-10-27,Office Supplies,5
+2021-10-28,Office Supplies,11
+2021-10-29,Office Supplies,2
+2021-10-31,Office Supplies,42
+2021-11-01,Office Supplies,57
+2021-11-02,Office Supplies,12
+2021-11-03,Office Supplies,36
+2021-11-04,Office Supplies,20
+2021-11-05,Office Supplies,8
+2021-01-06,Technology,6
+2021-01-09,Technology,3
+2021-01-13,Technology,6
+2021-01-15,Technology,5
+2021-01-16,Technology,3
+2021-01-20,Technology,7
+2021-01-21,Technology,10
+2021-01-26,Technology,15
+2021-02-01,Technology,6
+2021-02-02,Technology,5
+2021-02-06,Technology,6
+2021-02-07,Technology,7
+2021-02-11,Technology,3
+2021-02-14,Technology,3
+2021-02-20,Technology,3
+2021-03-01,Technology,3
+2021-03-02,Technology,3
+2021-03-03,Technology,1
+2021-03-05,Technology,3
+2021-03-11,Technology,5
+2021-03-14,Technology,14
+2021-03-16,Technology,2
+2021-03-18,Technology,14
+2021-03-19,Technology,5
+2021-03-21,Technology,7
+2021-03-23,Technology,6
+2021-03-25,Technology,4
+2021-03-26,Technology,5
+2021-03-28,Technology,3
+2021-03-30,Technology,7
+2021-03-31,Technology,2
+2021-04-02,Technology,7
+2021-04-03,Technology,5
+2021-04-04,Technology,2
+2021-04-05,Technology,1
+2021-04-06,Technology,7
+2021-04-07,Technology,8
+2021-04-08,Technology,4
+2021-04-11,Technology,24
+2021-04-12,Technology,18
+2021-04-13,Technology,12
+2021-04-18,Technology,7
+2021-04-25,Technology,3
+2021-04-28,Technology,7
+2021-04-29,Technology,2
+2021-04-30,Technology,3
+2021-05-02,Technology,2
+2021-05-08,Technology,5
+2021-05-09,Technology,7
+2021-05-10,Technology,10
+2021-05-11,Technology,5
+2021-05-13,Technology,3
+2021-05-16,Technology,3
+2021-05-18,Technology,2
+2021-05-20,Technology,3
+2021-05-21,Technology,3
+2021-05-22,Technology,3
+2021-05-23,Technology,2
+2021-05-26,Technology,4
+2021-05-27,Technology,13
+2021-05-28,Technology,10
+2021-05-30,Technology,8
+2021-05-31,Technology,6
+2021-06-01,Technology,7
+2021-06-02,Technology,3
+2021-06-09,Technology,13
+2021-06-17,Technology,3
+2021-06-18,Technology,5
+2021-06-20,Technology,4
+2021-06-21,Technology,21
+2021-06-22,Technology,9
+2021-06-23,Technology,3
+2021-06-25,Technology,5
+2021-06-27,Technology,4
+2021-07-01,Technology,2
+2021-07-02,Technology,2
+2021-07-05,Technology,3
+2021-07-06,Technology,1
+2021-07-11,Technology,10
+2021-07-12,Technology,12
+2021-07-14,Technology,7
+2021-07-15,Technology,3
+2021-07-19,Technology,2
+2021-07-20,Technology,2
+2021-07-21,Technology,2
+2021-07-22,Technology,2
+2021-07-23,Technology,32
+2021-07-26,Technology,21
+2021-07-27,Technology,2
+2021-08-02,Technology,2
+2021-08-04,Technology,14
+2021-08-05,Technology,2
+2021-08-06,Technology,5
+2021-08-08,Technology,14
+2021-08-09,Technology,8
+2021-08-12,Technology,28
+2021-08-17,Technology,4
+2021-08-23,Technology,9
+2021-08-25,Technology,12
+2021-08-26,Technology,11
+2021-08-27,Technology,8
+2021-08-31,Technology,9
+2021-09-01,Technology,3
+2021-09-02,Technology,13
+2021-09-07,Technology,20
+2021-09-08,Technology,23
+2021-09-09,Technology,9
+2021-09-12,Technology,7
+2021-09-13,Technology,13
+2021-09-14,Technology,8
+2021-09-17,Technology,17
+2021-09-19,Technology,13
+2021-09-20,Technology,18
+2021-09-21,Technology,7
+2021-09-23,Technology,2
+2021-09-24,Technology,5
+2021-09-26,Technology,13
+2021-09-29,Technology,2
+2021-10-02,Technology,6
+2021-10-03,Technology,3
+2021-10-05,Technology,3
+2021-10-06,Technology,3
+2021-10-08,Technology,3
+2021-10-09,Technology,1
+2021-10-10,Technology,15
+2021-10-11,Technology,5
+2021-10-13,Technology,4
+2021-10-14,Technology,8
+2021-10-16,Technology,3
+2021-10-17,Technology,3
+2021-10-18,Technology,5
+2021-10-19,Technology,12
+2021-10-20,Technology,4
+2021-10-25,Technology,3
+2021-10-26,Technology,5
+2021-10-28,Technology,2
+2021-10-29,Technology,8
+2021-10-31,Technology,19
+2021-11-01,Technology,16
+2021-11-02,Technology,31
+2021-11-03,Technology,7
+2021-11-04,Technology,23
+2021-11-05,Technology,5

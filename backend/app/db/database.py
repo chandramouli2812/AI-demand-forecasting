@@ -3,7 +3,11 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 DATABASE_URL = "sqlite:///./data.db"
 
-engine = create_engine(DATABASE_URL)
+engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(bind=engine)
 
 Base = declarative_base()
+
+# Ensure metadata tables exist
+from . import models  # noqa: F401
+Base.metadata.create_all(bind=engine)

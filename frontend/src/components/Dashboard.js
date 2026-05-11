@@ -3,55 +3,83 @@ import { getPrediction, getInsights } from "../api";
 import Charts from "./Charts";
 
 function Dashboard() {
-  const [data, setData] = useState([]);
+  const [products, setProducts] = useState(["All Products"]);
+  const [selectedProduct, setSelectedProduct] = useState("All Products");
+  const [chartData, setChartData] = useState([]);
+  const [forecastData, setForecastData] = useState([]);
   const [insights, setInsights] = useState(null);
-  const [loadingInsights, setLoadingInsights] = useState(false);
-  const [loadingForecast, setLoadingForecast] = useState(false);
+  const [inventory, setInventory] = useState(null);
+  const [metrics, setMetrics] = useState(null);
+  const [metadata, setMetadata] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [days, setDays] = useState(7);
 
-  const fetchPrediction = async (predictionDays = days) => {
+  const loadInsights = async (product) => {
     try {
-      setLoadingForecast(true);
-      const res = await getPrediction(predictionDays);
-      const responseData = res.data.data;
-
-      if (!Array.isArray(responseData) || responseData.length === 0) {
-        alert("No forecast data available");
-        return;
-      }
-
-      setData(responseData);
-    } catch (err) {
-      console.error(err);
-      alert("❌ Error fetching prediction");
-    } finally {
-      setLoadingForecast(false);
-    }
-  };
-
-  const fetchInsights = async () => {
-    try {
-      setLoadingInsights(true);
-      const res = await getInsights();
-      setInsights(res.data.insights);
+      const response = await getInsights(product);
+      const { insights: insightPayload, products: availableProducts, selected_product } = response.data;
+      setInsights(insightPayload);
+      setProducts(availableProducts || ["All Products"]);
+      setSelectedProduct(selected_product || product || "All Products");
     } catch (err) {
       console.error(err);
       setInsights(null);
-    } finally {
-      setLoadingInsights(false);
     }
   };
 
+  const loadPrediction = async (product, predictionDays = days) => {
+    try {
+      setLoading(true);
+      const response = await getPrediction(predictionDays, product);
+      setForecastData(response.data.data || []);
+      setChartData(response.data.chart || []);
+      setInventory(response.data.inventory || null);
+      setMetrics(response.data.metrics || null);
+      setMetadata(response.data.metadata || null);
+    } catch (err) {
+      console.error(err);
+      alert("❌ Error fetching forecast data. Ensure the model is trained and the selected product exists.");
+      setForecastData([]);
+      setChartData([]);
+      setInventory(null);
+      setMetrics(null);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const refreshData = async (product, predictionDays) => {
+    await loadInsights(product);
+    await loadPrediction(product, predictionDays);
+  };
+  <button
+  className="button secondary"
+  onClick={() => refreshData(selectedProduct, days)}
+  disabled={loading}
+>
+  {loading ? "Refreshing..." : "Refresh Data"}
+</button>
+
+
   useEffect(() => {
-    fetchInsights();
+    refreshData(selectedProduct, days);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (selectedProduct) {
+      loadPrediction(selectedProduct, days);
+      loadInsights(selectedProduct);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedProduct]);
 
   return (
     <div className="dashboard-panel">
       <div className="section-header">
         <div>
           <p className="section-eyebrow">Forecast Analytics</p>
-          <h2>Live Insights</h2>
+          <h2>Demand & Inventory</h2>
         </div>
         <div className="button-row">
           <label className="days-input-wrapper">
@@ -65,57 +93,92 @@ function Dashboard() {
               onChange={(e) => setDays(Math.max(1, Number(e.target.value) || 1))}
             />
           </label>
-          <button className="button primary" onClick={() => fetchPrediction(days)} disabled={loadingForecast}>
-            {loadingForecast ? "Loading..." : `Predict ${days} Days`}
-          </button>
-          <button className="button secondary" onClick={fetchInsights} disabled={loadingInsights}>
-            {loadingInsights ? "Refreshing..." : "Refresh Insights"}
+          <label className="product-select-wrapper">
+            <span>Product</span>
+            <select
+              value={selectedProduct}
+              onChange={(e) => setSelectedProduct(e.target.value)}
+            >
+              {products.map((product) => (
+                <option key={product} value={product}>
+                  {product}
+                </option>
+              ))}
+            </select>
+          </label>
+          <button className="button primary" onClick={() => loadPrediction(selectedProduct, days)} disabled={loading}>
+            {loading ? "Loading..." : `Predict ${days} Days`}
           </button>
         </div>
       </div>
 
       <div className="kpi-grid">
         <div className="kpi-card">
-          <span>Max Demand</span>
-          <strong>{insights?.max_demand ?? "—"}</strong>
-        </div>
-        <div className="kpi-card">
-          <span>Min Demand</span>
-          <strong>{insights?.min_demand ?? "—"}</strong>
-        </div>
-        <div className="kpi-card">
           <span>Average Demand</span>
-          <strong>{insights?.average_demand ? insights.average_demand.toFixed(2) : "—"}</strong>
+          <strong>{insights?.average_demand != null ? insights.average_demand.toFixed(2) : "—"}</strong>
         </div>
         <div className="kpi-card">
-          <span>Trend</span>
+          <span>Demand Trend</span>
           <strong>{insights?.trend ?? "—"}</strong>
         </div>
         <div className="kpi-card">
-          <span>Percent Change</span>
-          <strong>{insights?.percent_change != null ? `${insights.percent_change}%` : "—"}</strong>
+          <span>Anomaly Count</span>
+          <strong>{insights?.anomaly_count != null ? insights.anomaly_count : "—"}</strong>
+        </div>
+        <div className="kpi-card">
+          <span>MAE</span>
+          <strong>{metrics?.mae != null ? metrics.mae.toFixed(2) : "—"}</strong>
+        </div>
+        <div className="kpi-card">
+          <span>RMSE</span>
+          <strong>{metrics?.rmse != null ? metrics.rmse.toFixed(2) : "—"}</strong>
+        </div>
+        <div className="kpi-card">
+          <span>MAPE</span>
+          <strong>{metrics?.mape != null ? `${metrics.mape.toFixed(1)}%` : "—"}</strong>
         </div>
       </div>
 
       <div className="chart-card">
         <div className="chart-header">
           <div>
-            <h3>7-day Forecast</h3>
-            <p>Forecast values are generated from the latest trained model.</p>
+            <h3>Forecast vs Actual</h3>
+            <p>Compare recent demand, forecast, and anomalies for the selected product.</p>
           </div>
         </div>
-        <Charts data={data} />
+        <Charts data={chartData} />
       </div>
 
-      {data && data.length > 0 && (
+      <div className="analytics-grid">
+        <section className="card smaller-card">
+          <h3>Inventory Recommendations</h3>
+          <div className="details-list">
+            <p><strong>Reorder Point:</strong> {inventory?.reorder_point ?? "—"}</p>
+            <p><strong>Safety Stock:</strong> {inventory?.safety_stock ?? "—"}</p>
+            <p><strong>Suggested Reorder:</strong> {inventory?.suggested_reorder_quantity ?? "—"}</p>
+            <p><strong>Target Stock:</strong> {inventory?.recommended_stock ?? "—"}</p>
+          </div>
+        </section>
+
+        <section className="card smaller-card">
+          <h3>Model Summary</h3>
+          <div className="details-list">
+            <p><strong>Last trained:</strong> {metadata?.last_trained ?? "—"}</p>
+            <p><strong>Products trained:</strong> {metadata?.product_count ?? "—"}</p>
+            <p><strong>Data points:</strong> {metadata?.dataset_size ?? "—"}</p>
+          </div>
+        </section>
+      </div>
+
+      {insights?.anomalies?.length > 0 && (
         <div className="details-card">
-          <h3>Forecast Details</h3>
-          <p className="details-description">A quick view of the predicted demand for the next 7 days.</p>
+          <h3>Anomaly Highlights</h3>
+          <p className="details-description">Detected spikes and drops in recent demand history.</p>
           <ul className="details-list">
-            {data.map((point) => (
-              <li key={point.day}>
-                <span>{point.day}</span>
-                <strong>{Number(point.forecast).toFixed(2)}</strong>
+            {insights.anomalies.map((point) => (
+              <li key={point.ds}>
+                <span>{point.ds}</span>
+                <strong>{`${point.type.toUpperCase()} ${point.value} (z=${point.z_score})`}</strong>
               </li>
             ))}
           </ul>
