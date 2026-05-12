@@ -38,8 +38,7 @@ The system allows businesses to analyze historical sales data, forecast future d
 * Uses Machine Learning / Time-Series models:
 
   * Linear Regression
-  * ARIMA / Prophet (if implemented)
-
+  * ARIMA / Prophet 
 ---
 
 ## 2. Inventory Recommendation Engine
